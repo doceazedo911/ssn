@@ -1,0 +1,30 @@
+{
+  "currentGoal": "Junho de 2021",
+  "thisMonth": [
+    {
+      "day": 1,
+      "username": "DoceAzedo",
+      "amount": 20
+    },
+    {
+      "day": 7,
+      "username": "Dalcanaleadv",
+      "amount": 20
+    },
+    {
+      "day": 19,
+      "username": "Sourcandy",
+      "amount": 15
+    }
+  ],
+  "pastMonths": [
+    {
+      "month": "Maio",
+      "amount": 69.69
+    }
+  ],
+  "map": {
+    "size": 202,
+    "updatedAt": "05/06/2021"
+  }
+}

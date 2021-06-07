@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>servidor sem nome</title>
+  <link rel="stylesheet" href="assets/css/minireset.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;1,300&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <section>
+    <header>
+      <img src="assets/img/logo.webp" alt="Logotipo do servidor sem nome">
+    </header>
+    <main>
+      <div>
+        <a>
+          <i class="fas fa-copy"></i> Copiar IP
+        </a>
+        <a href="https://discord.gg/EReTZsJ6BB" target="_blank">
+          <i class="fab fa-discord"></i> Junte-se ao Discord
+        </a>
+        <a href="https://tlauncher.org/installer" rel="nofollow">
+          <i class="fas fa-download"></i> Baixar Minecraft
+        </a>
+      </div>
+      <article id="sobre">
+        <h1><i class="fas fa-fw fa-question-circle"></i> Sobre o servidor</h1>
+        <p>O servidor sem nome é um dos poucos servidores de anarquia ativos no Brasil, com a promessa de um ambiente sem regras, modifiações e nem filtros de linguagem, onde a única preocupação da administração é manter o servidor funcionando. Apesar de fundado em 21/03/2020, o mapa atual foi criado apenas em 20/12/2020.</p>
+        <p>O servidor é disponibilizado para versão Java 1.12.2 do Minecraft para jogadores originais e <i>crackeados</i>. O mesmo ocupa <span>0</span>GB de espaço em disco na data de <span>00/00/0000</span>.</p>
+      </article>
+      <article id="doar">
+        <h1><i class="fas fa-fw fa-coins"></i> Apoie o servidor</h1>
+        <p>Manter o servidor sem nome rodando consistentemente não é uma tarefa fácil e nem acessível. Por isso eu pessoalmente aceito doações que contribuem diretamente com a manutenção da hospedagem. Se você quiser doar, você pode enviar qualquer valor via:</p>
+        <ul>
+          <li>Mercado Pago ou PayPal: <a href="mailto:ssn@doceazedo.com">ssn@doceazedo.com</a></li>
+          <li>Bitcoin: <a href="bitcoin:bc1q8l2dsl5pjzf9eg2ha655p5ws5zevdaftse0v7l">bc1q8l2dsl5pjzf9eg2ha655p5ws5zevdaftse0v7l</a></li>
+          <li>Dogecoin: <a href="dogecoin:DHFwudJKjpuwCj1HvmqLFyfKaPv5yk2x9Q">DHFwudJKjpuwCj1HvmqLFyfKaPv5yk2x9Q</a></li>
+          <li>Browncoin: <a href="browncoin:BM8YeBrfnC7ioshfpcrw7uXg7k8PfBMfwg">BM8YeBrfnC7ioshfpcrw7uXg7k8PfBMfwg</a></li>
+        </ul>
+        <p>Caso você queira, você poderá abrir um ticket no Discord e enviar o recibo da sua doação. Ao doar R$<input type="number" value="20">, você recebe <span>30</span> dias de:</p>
+        <ul>
+          <li>Cor personalizada no chat do jogo</li>
+          <li>Escrever colorido no chat do jogo</li>
+          <li>Trocar de skin usando <code>/skin</code></li>
+          <li>Cargo exclusivo no Discord</li>
+        </ul>
+        <p class="muted">Note que as recompensas são opcionais e serão ativadas de acordo com a minha disponibilidade pessoal.</p>
+        <p class="muted">Se você não sabe como enviar dinheiro por Mercado Pago, <a href="https://mercadopago.com.br/amigos/envio-de-dinheiro" target="_blank" rel="nofollow">clique aqui</a>.</p>
+      </article>
+      <article id="meta">
+        <h1><i class="far fa-fw fa-money-bill-alt"></i> Meta de doações</h1>
+        <div class="row">
+          <div class="column">
+            <h2>Meta do mês</h2>
+            <p>A meta é reiniciada todo quinto dia útil.</p>
+            <div class="progress"><span style="width:1%"></span></div>
+            <label>R$<span>0</span> / R$100</label>
+          </div>
+          <div class="column">
+            <h2>Doações do mês</h2>
+            <table id="donations">
+              <thead>
+                <tr>
+                  <th>Dia</th>
+                  <th>Usuário</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="column">
+            <h2>Metas passadas</h2>
+            <table id="goals">
+              <thead>
+                <tr>
+                  <th>Mês</th>
+                  <th>Valor arrecadado</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+      <article id="conectar">
+        <h1><i class="fas fa-fw fa-link"></i> Como se conectar</h1>
+        <ol>
+          <li>
+            No <b>TLauncher</b>, escolha um nick e troque a versão mais recente pela 1.12.2.<br>
+            No <b>jogo original</b>, acesse "Instalações" e adicione uma nova instalação na versão 1.12.2. Volte em "Jogar" e selecione a instalação criada.
+          </li>
+          <li>Abra o jogo, clique em "Multijogador", "Adicionar servidor" e cole o IP do servidor.</li>
+          <li>Agora é só clicar duas vezes no servidor sempre que quiser se conectar.</li>
+          <li>Na primeira vez, use o comando <code>/registrar *senha* *confirmar-senha*</code>. Nas próximas, use <code>/login *senha*</code>.</li>
+        </ol>
+        <p class="muted">Observação: Por se tratar de um servidor que aceita jogadores <i>crackeados</i>, se você adquiriu o jogo e se cadastrou no servidor com um nick, ao trocar o nick da sua conta seu registro não será transferido. Você deverá jogar com o nick antigo ou transferir seus itens manualmente para um novo registro.</p>
+      </article>
+      <article id="tutorial">
+        <h1><i class="fas fa-fw fa-gamepad"></i> Primeiros passos</h1>
+        <p>Se esse é o seu primeiro contato com um servidor sem regras, é importante você saber e estar preparado para encontrar muita toxicidade e pessoas má intencionadas. Por isso evite informar seus dados pessoais, clicar em links que você não confia e muito menos baixar arquivos desconhecidos. Existem sites que podem roubar seu endereço de IP (revelando sua localização) e arquivos que podem roubar seu acesso ao Minecraft e outras credenciais. Não há administração a recorrer caso você não consiga lidar com isso.</p>
+        <p>Alertado, aqui vão algumas dicas para fazer seus primeiros dias no servidor sem nome serem mais tranquilos:</p>
+        <ul>
+          <li>Não peça ajuda de ninguém, você não tem nada de valor para trocar com quem poderia te ajudar.</li>
+          <li>Quando conseguir fugir do spawn, pescar pode vir a ser sua fonte de alimento mais descomplicada.</li>
+          <li>Caminhe bastante antes de construir sua primeira casa (pelo menos 10.000 blocos pelo Nether).</li>
+          <li>Faça uma cama o quanto antes. Você não vai querer arriscar renascer no spawn depois de ter caminhado tanto.</li>
+          <li>Faça um enderchest (baú do fim) para guardar seus itens mais valiosos. Ainda melhor se você já tiver shulkers.</li>
+          <li>Ficou preso? Renasça usando <code>/kill</code>. Alguém tá te incomodando? Use <code>/ignore &lt;jogador&gt;</code>.</li>
+          <li>Evite usar módulos de sufixo ou que 𝕗𝕠𝕣𝕞𝕒𝕥𝕖𝕞 suas mensagens, pois eles vão interferir com os comandos.</li>
+          <li>Ao ser <i>kickado</i> pelo anti cheat, desabilite todos os módulos e espere antes de se reconectar.</li>
+        </ul>
+      </article>
+      <article id="mods">
+        <h1><i class="fas fa-fw fa-tools"></i> Recomendações</h1>
+        <p>Uma das consequências mais notáveis da falta de regras é o uso deliberado de hacks e outros utilitários, chegando a um ponto em que o uso dessas ferramentas é quase obrigatório para ter uma chance maior de sobreviver nesse ambiente. Tenha muito cuidado com a procedência das modificações que você baixa e tenha certeza que você está no site ou fonte oficial delas, caso contrário você corre o sério risco de infectar seu computador e perder acesso a sua conta e outros dados.</p>
+        <p>Agora segue uma lista de modificações curada por mim e suas fontes oficiais, ordenado a partir do mais recomendado para iniciantes. Eu não tenho nenhuma relação com nenhuma delas e não sou responsável por nenhuma consequência indesejada pelo uso das mesmas.</p>
+        <ul>
+          <li><a target="_blank" rel="nofollow" href="https://inertiaclient.com">Inertia</a> - Completo, competente e uma ótima primeira opção no geral.</li>
+          <li><a target="_blank" rel="nofollow" href="https://github.com/CreepyOrb924/creepy-salhack">Creepy Salhack</a> - <i>Fork</i> do Salhack, boa opção para quem quer iniciar no CPVP.</li>
+          <li><a target="_blank" rel="nofollow" href="https://github.com/IUDevman/gamesense-client">GameSense</a> - Descontinuado recentemente, mas ainda é um excelente mod utilitário.</li>
+          <li><a target="_blank" rel="nofollow" href="https://github.com/WurstPlus/wurst-plus-three">Wurst+3</a> - Sucessor do Wurst+2 com módulos focados em CPVP.</li>
+          <li><a target="_blank" rel="nofollow" href="https://discord.gg/BANbWFBB6d">1pop</a> ($10) - Mod brasileiro desenvolvido por membros da comunidade.</li>
+          <li><a target="_blank" rel="nofollow" href="https://konasclient.com">Konas</a> ($15) - Indicado para quem está disposto a progredir o nível do CPVP.</li>
+        </ul>
+      </article>
+    </main>
+    <footer>Com amor, <a href="https://doceazedo.com">DoceAzedo</a>.</footer>
+  </section>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
